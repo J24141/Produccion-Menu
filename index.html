@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante El Cisne · Menú del día</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar__inner">
+        <span class="topbar__item">Lunes a sábado, 11:00 a.m. – 3:00 p.m.</span>
+        <span class="topbar__item topbar__item--phone">
+          <svg viewBox="0 0 24 24" class="icon-inline" aria-hidden="true">
+            <path
+              d="M6.6 10.8c1.4 2.8 3.7 5.1 6.5 6.5l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z"
+            />
+          </svg>
+          320 419 8609
+        </span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="#inicio" class="brand">
+          <img src="./images/logo.png" alt="" class="brand__mark" />
+          <span class="brand__text">
+            <span class="brand__eyebrow">Restaurante</span>
+            <span class="brand__name">El Cisne</span>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#menu">Menú de hoy</a>
+          <a href="#principio-proteina">Arma tu plato</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#contacto" class="btn btn--ghost nav__cta"
+          >Pedir a domicilio</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero__leaf hero__leaf--tl" aria-hidden="true"></div>
+        <div class="hero__leaf hero__leaf--br" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <p class="hero__kicker">¡Buen sabor, siempre!</p>
+          <h1 class="hero__title">
+            El almuerzo<br />que espera<br />tu semana.
+          </h1>
+          <p class="hero__subtitle">
+            Cada mañana preparamos sopa casera, un plato ejecutivo a tu gusto y
+            un especial de la casa — todo con domicilio gratis en la zona.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary">Ver el menú de hoy</a>
+            <a href="#contacto" class="btn btn--outline"
+              >Escribir por WhatsApp</a
+            >
+          </div>
+        </div>
+        <img src="./images/plato.png" alt="" class="hero__plate-svg">
+      </section>
+
+      <section id="menu" class="menu">
+        <div class="section-head">
+          <p class="section-head__kicker">Menú para hoy</p>
+          <h2 class="section-head__title">Lo que sale hoy de la cocina</h2>
+          <p class="section-head__note">
+            Todos los platos se sirven con sopa del día y limonada.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card card--soup">
+            <div class="card__icon">
+              <img src="./images/plato.png" alt="" class="card__icon"/>
+            </div>
+            <p class="card__label">Sopa del día</p>
+            <h3 class="card__title">Sopa de arroz</h3>
+            <p class="card__desc">
+              Caldo casero de gallina con arroz, cilantro y verduras de la
+              huerta.
+            </p>
+          </article>
+
+          <article class="card card--specials">
+            <div class="card__icon card__icon--flame">
+              <img src="./images/churrasco.png" alt="">
+            </div>
+            <p class="card__label">Platos especiales</p>
+            <ul class="price-list">
+              <li>
+                <span>Churrasco</span><span class="price-list__dots"></span
+                ><span class="price">$21.000</span>
+              </li>
+              <li>
+                <span>Churrasquito</span><span class="price-list__dots"></span
+                ><span class="price">$16.000</span>
+              </li>
+              <li>
+                <span>Mojarra 1 lb</span><span class="price-list__dots"></span
+                ><span class="price">$21.000</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card card--feature card--ajiaco">
+            <div class="card__feature-text">
+              <p class="card__label card__label--light">Especial de la casa</p>
+              <h3 class="card__title card__title--light">Ajiaco con pollo</h3>
+              <p class="card__desc card__desc--light">
+                Pierna pernil sudada, arroz, aguacate y bebida incluidos.
+              </p>
+            </div>
+            <p class="card__price-big">$16.000</p>
+          </article>
+
+          <article class="card card--ejecutivos">
+            <p class="card__label">Platos ejecutivos · desde $15.000</p>
+            <h3 class="card__title">Elige tu proteína</h3>
+            <ul class="check-list">
+              <li>Carne asada</li>
+              <li>Costilla de cerdo frita</li>
+              <li>Costilla de cerdo BBQ</li>
+              <li>Pierna pernil frita</li>
+              <li>Milanesa de pechuga</li>
+              <li>Pechuga a la plancha</li>
+              <li>Pierna pernil sudada</li>
+              <li>Sobrebarriga dorada</li>
+            </ul>
+          </article>
+
+          <article class="card card--bandeja">
+            <img src="./images/bandeja.png" alt="" class="card__icon">
+
+            <p class="card__label">Tradición paisa</p>
+            <h3 class="card__title">Bandeja paisa</h3>
+            <p class="card__desc">
+              Frijoles, arroz, chicharrón, chorizo, huevo, arepa, aguacate y
+              plátano.
+            </p>
+            <p class="card__price">$14.000</p>
+          </article>
+
+          <article class="card card--corriente">
+            <p class="card__label card__label--light">El favorito de siempre</p>
+            <h3 class="card__title card__title--light">Almuerzo corriente</h3>
+            <p class="card__price-big card__price-big--light">$11.500</p>
+            <p class="card__desc card__desc--light">
+              Incluye sopa, proteína, principio, arroz, ensalada y limonada.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="principio-proteina" class="build">
+        <div class="build__inner">
+          <div class="build__col">
+            <p class="section-head__kicker">Arma tu plato</p>
+            <h2 class="build__title">Principio</h2>
+            <ul class="pick-list">
+              <li>Fríjol</li>
+              <li>Garbanzo</li>
+              <li>Pepino</li>
+            </ul>
+          </div>
+          <div class="build__divider" aria-hidden="true"></div>
+          <div class="build__col">
+            <p class="section-head__kicker">&nbsp;</p>
+            <h2 class="build__title">Proteína</h2>
+            <ul class="pick-list">
+              <li>Lomo asado</li>
+              <li>Ternera</li>
+              <li>Pollo frito</li>
+              <li>Pollo sudado</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="delivery-banner">
+          <svg
+            viewBox="0 0 48 48"
+            class="delivery-banner__icon"
+            aria-hidden="true"
+          >
+            <circle
+              cx="14"
+              cy="36"
+              r="5"
+              fill="none"
+              stroke="#F7EEDD"
+              stroke-width="3"
+            />
+            <circle
+              cx="34"
+              cy="36"
+              r="5"
+              fill="none"
+              stroke="#F7EEDD"
+              stroke-width="3"
+            />
+            <path
+              d="M8 36h6l3-14h9l4 10h6M17 22h9"
+              stroke="#F7EEDD"
+              stroke-width="3"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p>Domicilio gratis en pedidos dentro de la zona</p>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <div class="contact__inner">
+          <div class="contact__info">
+            <p class="section-head__kicker">Contacto</p>
+            <h2 class="section-head__title">¿Pedimos tu almuerzo?</h2>
+            <p class="section-head__note">
+              Escríbenos por WhatsApp y te llevamos el menú de hoy hasta la
+              puerta.
+            </p>
+            <div class="contact__whatsapp">
+              <a class="whatsapp-pill" href="https://wa.me/573204198609">
+                <svg
+                  viewBox="0 0 32 32"
+                  class="icon-inline icon-inline--lg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.6.8 5 2.1 7.1L3 29l6.4-2.3c2 1.1 4.3 1.7 6.6 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm7.4 18.1c-.3.9-1.7 1.7-2.4 1.8-.6.1-1.4.1-2.3-.1-.5-.2-1.2-.4-2-.8-3.5-1.5-5.8-5-6-5.3-.2-.3-1.4-1.9-1.4-3.6s.9-2.6 1.3-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5 0 .8.6.3.7 1 2.4 1.1 2.6.1.2.2.4 0 .7-.1.3-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.1.8-.1l1.2-1.4c.3-.3.5-.3.8-.2.3.1 1.9.9 2.2 1.1.3.1.5.2.6.4.1.2.1.9-.2 1.8z"
+                  />
+                </svg>
+                320 419 8609
+              </a>
+              <a class="whatsapp-pill" href="https://wa.me/573204065469">
+                <svg
+                  viewBox="0 0 32 32"
+                  class="icon-inline icon-inline--lg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.6.8 5 2.1 7.1L3 29l6.4-2.3c2 1.1 4.3 1.7 6.6 1.7 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm7.4 18.1c-.3.9-1.7 1.7-2.4 1.8-.6.1-1.4.1-2.3-.1-.5-.2-1.2-.4-2-.8-3.5-1.5-5.8-5-6-5.3-.2-.3-1.4-1.9-1.4-3.6s.9-2.6 1.3-2.9c.3-.3.7-.4 1-.4h.7c.2 0 .5 0 .8.6.3.7 1 2.4 1.1 2.6.1.2.2.4 0 .7-.1.3-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.1.8-.1l1.2-1.4c.3-.3.5-.3.8-.2.3.1 1.9.9 2.2 1.1.3.1.5.2.6.4.1.2.1.9-.2 1.8z"
+                  />
+                </svg>
+                320 406 5469
+              </a>
+            </div>
+            <p class="contact__hours">
+              Atención de lunes a sábado, 11:00 a.m. a 3:00 p.m.
+            </p>
+          </div>
+
+          <div class="contact__card">
+            <p class="contact__card-label">Horario</p>
+            <p class="contact__card-line">Lunes – sábado</p>
+            <p class="contact__card-line contact__card-line--big">
+              11:00 a.m. – 3:00 p.m.
+            </p>
+            <div class="contact__card-rule"></div>
+            <p class="contact__card-label">Todos los platos incluyen</p>
+            <p class="contact__card-line">Sopa del día + limonada</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <a href="#inicio" class="brand brand--footer">
+          <img src="./images/logo.png" alt="" class="brand__mark">
+          <span class="brand__text">
+            <span class="brand__eyebrow">Restaurante</span>
+            <span class="brand__name">El Cisne</span>
+          </span>
+        </a>
+        <p class="site-footer__tag">¡Los esperamos en Restaurante El Cisne!</p>
+        <p class="site-footer__copy">
+          © 2026 Restaurante El Cisne · Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
